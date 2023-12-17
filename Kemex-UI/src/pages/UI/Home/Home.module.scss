@@ -1,0 +1,17 @@
+.welcome {
+  height: 160vh;
+  position: relative;
+  background-color: var(--g-color-primary)
+}
+
+@media (max-width: 756px) {
+  .welcome{
+    height: 196vh;
+  }
+}
+
+@media (max-width: 580px) {
+  .welcome{
+    height: 196vh;
+  }
+}

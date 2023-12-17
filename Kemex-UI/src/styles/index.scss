@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'Franklin Gothic Book';
+  src: url('public/fonts/Franklin_Gothic_Book_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+:root{
+  --g-color-primary: #f1f6fb;
+  --g-color-secondary: #304f6d;
+  --g-color-secondary5: #4876a2;
+  --g-color-secondary3: #083158;
+  --g-color-secondary4: #4A9ADD ;
+  --g-color-secondary6: #197dd1;
+  --g-color-secondary2: #061325;
+  --g-color-text: #6A6F83;
+  --g-color-text-dark: #111f33;
+  --g-color-accent: #e07d54;
+  --g-color-accent2: #FE7A00;
+  --g-color-white: #FFFFFF;
+  --g-color-primary-dark: #111f33;
+  --g-color-dark: #000000;
+  --g-color-light: #FFFFFF2B;
+  --g-color-light-2: #EAEDEF;
+  --g-color-light-blue: #183966;
+  --g-font-family-primary: 'Kanit', sans-serif;
+  --g-font-family-secondary: 'Poppins', sans-serif;
+  --g-font-size-xlg: 70px;
+  --g-font-size-lg: 48px;
+  --g-font-weight-primary: 600;
+}
+root {
+  font-family:  'Libre Franklin', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  box-sizing: border-box;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--g-color-white);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:  'Libre Franklin', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--g-color-white);
+}
+a {
+  text-decoration: none;
+}
+ul{
+  padding: 0;
+}
+ul, li{
+  list-style: none;
+}
+input:disabled{
+  opacity: 0.3;
+}
+
+textarea:disabled{
+  opacity: 0.5;
+}
+
+.activeLink {
+  color: var(--g-color-white);
+  &::after{
+    background-color: var(--g-color-white) !important;
+    width: calc(100% - 1.6rem) !important;
+  }
+}
+
+
+@media (max-width: 756px) {
+  .alice-carousel {
+    position: relative;
+  }
+}
+
+.link{
+  color: var(--g-color-light-2);
+}
+
+#phone .react-international-phone-country-selector{
+  width: 57px;
+  border: none;
+  border-right: 1px solid #c3c8cc;
+  //background: red !important;
+}
+#phone .react-international-phone-country-selector-button{
+  border: none;
+  background: #F1F6FB;
+}
+
+
+#product .rodal-dialog{
+  //top: -80px;
+  //width: 350px !important ;
+  height: 80vh !important;
+  //overflowY: scroll;
+}
+
+
+.react-international-phone-country-selector-button{
+  //background: #F1F6FB;
+  background: #eaedef;
+}
+.contact .react-international-phone-country-selector-button{
+  background: #F1F6FB !important;
+}
+
+@media (max-width: 600px) {
+  #product .rodal-dialog{
+    width: 350px !important ;
+    height: 85vh !important;
+    overflow: scroll;
+  }
+}
+
+textarea{
+  resize: none;
+}
+
+
