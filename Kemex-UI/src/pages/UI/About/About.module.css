@@ -1,0 +1,492 @@
+.about {
+  overflow-x: hidden;
+}
+
+.main {
+  position: relative;
+}
+
+.background {
+  width: 100%;
+  height: 85vh;
+  background-image: url(http://advanture.icu/contrix/wp-content/uploads/sites/22/2023/04/unsplash__FbcbBubyIM.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  opacity: 1.8;
+}
+
+.content {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  width: 40%;
+  padding: 50px;
+  background-color: var(--g-color-light-blue);
+  opacity: 0.75;
+}
+
+.content h2 {
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.content .title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2rem;
+  letter-spacing: 2px;
+  color: var(--g-color-accent);
+}
+
+.content .description {
+  color: var(--g-color-text);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.content .line {
+  width: 150px;
+  height: 4px;
+  background: var(--g-color-accent);
+}
+
+.elementaryWrapper {
+  background-image: url("/public/body-bg.png");
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--g-color-primary);
+}
+
+.elementary {
+  width: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(241, 246, 251, 0.8);
+  padding: 5rem 0 2rem;
+}
+
+.elementary .elLeft {
+  width: 50%;
+}
+
+.elLeft .contrix {
+  color: var(--g-color-accent);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2em;
+  letter-spacing: 2px;
+}
+
+.elLeft .title {
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 60px;
+  margin: 0.8rem 0;
+  color: var(--g-color-secondary);
+}
+
+.elementary .description {
+  font-size: 17px;
+}
+
+.info {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+}
+
+.infoInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info .experience h5 {
+  color: var(--g-color-accent);
+}
+
+.info .experience h2 {
+  color: var(--g-color-light-2);
+  font-size: 20px;
+  margin: 0;
+}
+
+.experience h3 {
+  margin: 0.5rem 0;
+  font-weight: 600;
+  color: var(--g-color-text);
+  font-size: 14px;
+}
+
+.experience .number {
+  font-size: 36px;
+}
+
+.experience .partnership {
+  text-transform: uppercase;
+  color: var(--g-color-light-2);
+  letter-spacing: 2px;
+  line-height: 1.2em;
+}
+
+.info .list {
+  width: 45%;
+}
+
+.info .list ul {
+  margin-top: 0;
+}
+
+.info .list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.listArrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--g-color-secondary4);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list li {
+  padding-bottom: 15px;
+}
+
+.inFoContacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.inFoContacts button {
+  width: 13vw;
+  margin-left: 0;
+}
+
+.inFoPhone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.inFoPhone p {
+  margin: 0 0 0.3rem;
+  color: var(--g-color-light-2);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.inFoPhone a {
+  color: var(--g-color-light-2);
+}
+
+.phoneWrapper {
+  background-color: #fff;
+  width: 4rem;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.elementary .elRight {
+  position: relative;
+  width: 48%;
+  height: 75vh;
+  margin: 30px;
+  padding: 3rem 1rem;
+}
+
+.elementary .elRight::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--g-color-secondary4);
+}
+
+.leftInfo {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("/public/about-us/kemex-3.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.infoOverlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(48, 79, 109, 0.2);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  z-index: -1;
+}
+
+.infoDesc {
+  color: var(--g-color-text);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  text-align: justify;
+}
+
+.ml {
+  margin-left: 46px;
+}
+
+.elRight .left {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.elRight .left img {
+  width: 300px;
+  height: 237px;
+  margin: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.elRight .right img {
+  position: absolute;
+  right: -4%;
+  top: -6%;
+  width: 405px;
+  height: 535px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 80% center;
+     object-position: 80% center;
+  z-index: 1;
+}
+
+.projectCount {
+  background-color: var(--g-color-white);
+  color: var(--g-color-secondary);
+  position: absolute;
+  left: 35%;
+  bottom: -1rem;
+  padding: 1rem 3rem;
+  z-index: 1;
+  text-align: center;
+  -webkit-box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.14);
+          box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.14);
+}
+
+.wrapper {
+  width: 75%;
+  height: 200px;
+  background-color: var(--g-color-accent);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact_sosials_wrapper {
+  width: 45%;
+}
+
+.contact_sosials_title {
+  margin: 0 0 5px 0;
+  color: var(--g-color-light-2);
+  text-transform: uppercase;
+}
+
+.contact_sosials {
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.contact_sosials svg {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact_sosials svg:hover {
+  fill: #4A9ADD;
+}
+
+@media (max-width: 1024px) {
+  .elementary {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3rem;
+    height: auto;
+  }
+  .elLeft {
+    width: 100% !important;
+  }
+  .inFoContacts {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .inFoContacts button {
+    width: 92vw;
+  }
+  .elRight {
+    width: 92% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 0.5rem !important;
+  }
+  .elRight img {
+    width: 95% !important;
+    height: auto !important;
+  }
+  .right, .projectCount {
+    display: none;
+  }
+  .elRight .left {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: static;
+  }
+  .leftInfo {
+    width: 100%;
+  }
+  .ml {
+    margin-left: unset;
+  }
+  .elRight {
+    display: none;
+  }
+}
+
+@media (max-width: 756px) {
+  .title {
+    font-size: 1.5rem !important;
+    line-height: 40px !important;
+  }
+  .description {
+    font-size: 15px;
+  }
+  .elRight img {
+    width: 92% !important;
+  }
+  .inFoContacts button {
+    width: 90vw;
+  }
+  .info .list {
+    width: 50%;
+    font-size: 13px;
+  }
+  .infoInner {
+    margin-bottom: 0;
+  }
+  .list {
+    margin: 0 !important;
+  }
+  .experience .number {
+    font-size: 20px;
+  }
+  .inFoContacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact_sosials_wrapper {
+    width: 100%;
+    margin-left: 24%;
+  }
+  .contact_sosials_title {
+    font-size: 13px;
+  }
+  .inFoContacts {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=About.module.css.map */

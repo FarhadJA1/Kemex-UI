@@ -13,7 +13,7 @@ import TelegramIcon from '@/components/lib/icons/TelegramIcon'
 const About = () => {
   const {t} = useTranslation('aboutPage');
   return (
-    <section className={styles.about}>
+    <section className={styles.about} style={{paddingTop:'90px'}}>
       <PageHero
         subtitle={`${t('about')}`}
         title={`${t('label')}`}

@@ -1,0 +1,224 @@
+.products {
+  width: 83%;
+}
+
+.productsTable {
+  border: 1px solid var(--g-color-secondary);
+  border-collapse: collapse;
+  width: 85%;
+  margin: 3rem auto 5rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  background-color: #fff;
+}
+
+.productsTable tr th {
+  font-size: 16px;
+  padding: 12px;
+  border: 2px solid var(--g-color-secondary);
+  text-align: left;
+  background-color: var(--g-color-secondary);
+  color: var(--g-color-white);
+}
+
+.productsTable tr th:not(:last-child) {
+  border-right-color: white;
+}
+
+.productsTable tr td {
+  border: 1px solid rgba(6, 19, 37, 0.4);
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+  color: var(--g-color-secondary);
+}
+
+.productsTable .disabled {
+  background-color: var(--g-color-primary);
+  opacity: 0.5;
+}
+
+.productsHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 84%;
+  margin: 2rem auto 0;
+}
+
+.productsHeader .productsSelect {
+  width: 40%;
+}
+
+.productsHeader button {
+  border: 1px solid var(--g-color-accent);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.productsHeader button svg {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.productsHeader button:hover {
+  background-color: var(--g-color-accent);
+}
+
+.productsHeader button:hover svg {
+  stroke: #fff;
+  fill: #fff;
+}
+
+.productsCol:first-child {
+  width: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.productsCol:nth-child(2) {
+  width: 85%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.productsCol:nth-child(3), .productsCol:nth-child(4) {
+  width: 5%;
+}
+
+.productsCol .categoriesBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.formBtn {
+  padding-bottom: 3rem;
+}
+
+.formTitle {
+  margin: 5px 0 0.5rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.formDivider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--g-color-accent);
+  margin-bottom: 1rem;
+  opacity: 0.3;
+}
+
+.formInputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+.formInputs label {
+  font-size: 14px;
+}
+
+.formInputs input {
+  border: 1px solid var(--g-color-light-blue);
+  border-radius: 2px;
+  padding: 8px;
+}
+
+.formDetails {
+  width: 100%;
+  position: relative;
+}
+
+.formDetails input {
+  width: 100%;
+}
+
+.formBtns {
+  right: 1rem;
+  bottom: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.formDetailsBtn {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 25%;
+  cursor: pointer;
+}
+
+.formDetailsAddBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.formDetailsAddBtn button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.formBtn {
+  padding: 8px 12px;
+  background-color: var(--g-color-light-blue);
+  border: 1px solid var(--g-color-light-blue);
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.formBtnRight {
+  background-color: var(--g-color-accent);
+  border: 1px solid var(--g-color-accent);
+}
+
+.formFieldError {
+  color: red;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+.confirmTitle {
+  margin-top: 3rem;
+}
+/*# sourceMappingURL=Products.module.css.map */

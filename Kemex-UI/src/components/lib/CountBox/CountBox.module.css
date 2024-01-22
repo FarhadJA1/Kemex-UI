@@ -1,0 +1,13 @@
+.count {
+  font-size: 46px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.countText {
+  color: var(--g-color-secondary4);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=CountBox.module.css.map */

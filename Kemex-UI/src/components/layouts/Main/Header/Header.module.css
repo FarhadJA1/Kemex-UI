@@ -1,0 +1,253 @@
+.header {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+}
+
+.headerTop {
+  background-color: var(--g-color-white);
+}
+
+.headerSocialsWrapper {
+  background-color: var(--g-color-white);
+  color: var(--g-color-secondary);
+  border-bottom: 1px solid var(--g-color-light);
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+.headerSocials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+.socialList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8rem;
+  position: relative;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.socialList .socialIcon svg:hover {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.socialList .socialIcon svg:hover path {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  fill: var(--g-color-secondary3);
+}
+
+.socialList a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  color: var(--g-color-secondary);
+  font-size: 13px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.socialList a:hover {
+  color: var(--g-color-secondary3);
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+}
+
+.socialList:not(:first-child)::after {
+  content: '';
+  position: absolute;
+  left: -1.5rem;
+  width: 1px;
+  height: 1.5rem;
+  background-color: var(--g-color-light);
+}
+
+.headerBg {
+  background-color: rgba(48, 79, 109, 0.85);
+  border-bottom: 1px solid var(--g-color-light);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.002);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.002);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+.navInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.logoWrapper {
+  width: 20%;
+}
+
+.logo {
+  width: 8rem;
+}
+
+.navLinks {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3%;
+}
+
+.navLinks a {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  padding: 0.8rem;
+  position: relative;
+}
+
+.navLinks a::after {
+  position: absolute;
+  content: "";
+  bottom: 0.3rem;
+  left: 0.8rem;
+  height: 1px;
+  width: 0;
+  background-color: transparent;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.navLinks a:hover::after {
+  background-color: var(--g-color-white);
+  width: calc(100% - 1.6rem);
+}
+
+.navMenu {
+  display: none;
+}
+
+.menuBtn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.navMobile {
+  height: 0;
+  visibility: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media (max-width: 756px) {
+  .lang {
+    display: none;
+  }
+  .mobileLang {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20%;
+  }
+  .mobileLang img {
+    width: 30px;
+  }
+  .socialList a {
+    font-size: 10px;
+  }
+  .socialList::after {
+    display: none;
+  }
+  .navInner {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .navLinks {
+    display: none;
+  }
+  .navMenu {
+    display: block;
+  }
+  .contactList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .headerSocialsWrapper {
+    padding: 0;
+  }
+  .mailLink {
+    display: none;
+  }
+  .navHidden {
+    display: none;
+  }
+  .menuActive {
+    position: absolute;
+    background-color: var(--g-color-secondary);
+    top: 110px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 3rem;
+    padding-left: 1rem;
+  }
+  .menuActive a {
+    width: 60%;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+  }
+}
+/*# sourceMappingURL=Header.module.css.map */

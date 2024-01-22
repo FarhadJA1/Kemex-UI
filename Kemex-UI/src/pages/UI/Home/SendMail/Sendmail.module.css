@@ -1,0 +1,136 @@
+.sendMail {
+  position: absolute;
+  width: 70vw;
+  right: 0;
+  bottom: 5%;
+  z-index: 8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.16);
+  overflow-x: hidden;
+}
+
+.content {
+  background-color: var(--g-color-secondary);
+  color: var(--g-color-light-2);
+  padding: 3rem;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+.desc {
+  color: var(--g-color-light);
+}
+
+.form {
+  background-color: var(--g-color-white);
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form .formField {
+  width: calc(48.5%);
+}
+
+.form input {
+  width: 100%;
+  padding: 0.5rem;
+  color: var(--g-color-secondary);
+  font-size: 1rem;
+  background-color: var(--g-color-light-2);
+  border: 1px solid var(--g-color-light-2);
+  border-radius: 4px;
+}
+
+.form .formTextField {
+  width: 100%;
+}
+
+.form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  color: var(--g-color-secondary);
+  background-color: var(--g-color-light-2);
+  border: 1px solid var(--g-color-light-2);
+  border-radius: 4px;
+}
+
+.form button[type="submit"] {
+  width: 100%;
+  margin: 1rem 0 0 0;
+}
+
+.form .formFieldError {
+  color: red;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 1280px) {
+  .sendMail {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1030px) {
+  .form {
+    padding: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .form textarea {
+    width: 100%;
+  }
+  .form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .sendMail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    bottom: 0;
+    width: 100%;
+  }
+  .content {
+    padding: 1rem;
+  }
+  .title {
+    font-size: 1.2rem;
+  }
+  .form {
+    padding: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .form textarea {
+    width: 100%;
+  }
+  .form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .form .formField {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Sendmail.module.css.map */

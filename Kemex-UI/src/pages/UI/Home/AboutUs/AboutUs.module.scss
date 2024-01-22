@@ -227,6 +227,9 @@
 }
 
 @media (max-width: 1024px) {
+  .overlay {
+    margin-top: 300px;
+  }
   .elementary {
     flex-direction: column;
     gap: 3rem;

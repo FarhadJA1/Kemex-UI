@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+.spinner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f1f6fb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  font-size: 60px;
+}
+
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #061325;
+  text-transform: uppercase;
+  -webkit-animation: waviy 1s infinite;
+          animation: waviy 1s infinite;
+  -webkit-animation-delay: calc(.1s * var(--i));
+          animation-delay: calc(.1s * var(--i));
+  margin-right: 10px;
+}
+
+.waviy span:nth-child(n+4) {
+  color: var(--g-color-accent) !important;
+}
+
+@-webkit-keyframes waviy {
+  0%, 40%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  20% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@keyframes waviy {
+  0%, 40%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  20% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+/*# sourceMappingURL=Spinner.module.css.map */
