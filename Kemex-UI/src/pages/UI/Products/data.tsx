@@ -69,7 +69,7 @@ export const icons = [
   {
     id: 11,
     icon: <ProductIcon5 color={'#fff'} />,
-    img: '/products-img/product4.jpg',
+    img: '/products-img/prod-image.jpg',
   },
   {
     id: 12,
