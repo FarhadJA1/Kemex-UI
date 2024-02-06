@@ -54,7 +54,7 @@ export const icons = [
   {
     id: 8,
     icon: <ProductIcon3 color={'#fff'} />,
-    img: '/products-img/prod-image.jpg',
+    img: '/products-img/glycols.webp',
   },
   {
     id: 9,
